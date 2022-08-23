@@ -1,0 +1,196 @@
+
+<?php include 'form.php';?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaswik - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9909cedc76.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar_container">
+
+            <a href="#home" id="navbar_logo"><img src="images/logo.png" alt="" class="logo">JASWIK</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="#home" class="navbar_links" id="home-page">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#products" class="navbar_links" id="products-page">Products</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#about" class="navbar_links" id="about-page">About</a>
+                </li>
+                <li class="navbar_item">
+                    <div class="navbar_btn_links">
+                        <div class="navbar__phone--btn" id="phone__button">
+                            <img src="images/phone_icon.svg" alt="" id="phone_icon">
+                            <p>9324616930</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="navbar_item">
+                    <div class="navbar_btn_links">
+                        <div class="navbar__email--btn" id="email__button" onclick="window.location.href='mailto:sales@jaswikventures.in'">
+                            <!-- <input class='button' value="Mail US" onclick="window.location.href='mailto:email@email.co'"> -->
+                            <i class="fa fa-envelope-o"></i>
+                            <p>Email</p>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="main" id="home">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>We Offer High Quality</h1>
+                <h2>Flow Switches</h2>
+                <h2>Side Channel Blowers</h2>
+                <p>Explore our Products by clicking on the link below</p>
+                <button class="main__btn"><a href="#products" class="src"><span>Explore </span></a></button>
+            </div>
+            <div class="main__img--container">
+                <img src="images/main_img.png" alt="drawing" id="main__img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+
+    <div class="products" id="products">
+        <div class="products__container">
+            <div class="products__title">
+                <h2> Check out our Products</h2>
+                <p>We have a wide range in Flow Switches & Ring Blowers suitable for applications in various industries</p>
+            </div>
+            <div class="products__img--container">
+                <a href="flowswitch.html" class="card">
+                    <div class="products__img--card">
+                        <img id="fs--img" src="images/FS2.png">
+                        <div class="products__name">
+                            <p>FLOW SWITCHES</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="flowswitch.html" class="card">
+                    <div class="products__img--card">
+                        <img id="scb--img" src="images/SCB2.png">
+                        <div class="products__name">
+                            <p>BLOWERS</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="about" id="about">
+        <div class="about__container">
+            <div class="about__img--container">
+                <div class="about__img--card"><i class="fas fa-industry"></i></div>
+            </div>
+            <div class="about__content">
+                <h1>About us</h1>
+                <p>At Jaswik, we are committed to serve our customers and industry by providing them with our best quality products, to help archive our customer their goals. We recognise that learning, understanding & innovation, are continuous processes.
+                    We strongly respect these values & nurture them. With core values of Teamwork, Excellence, Integrity, Dedication & Creativity at the heart of our operations.
+
+                </p>
+                <div class="contact_form">
+                    <form id="contact" action="" method="post">
+                        <div class="input-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" name="name" id="contact-name" onkeyup="validateName()">
+                            <span id="name-error"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Phone No.</label>
+                            <input type="text" placeholder="123 456 7890" maxlength="10" name="phone" id="contact-phone" onkeyup="validatePhone()">
+                            <span id="phone-error"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Email Id</label>
+                            <input type="email" placeholder="Enter Email" name="email" id="contact-email" onkeyup="validateEmail()">
+                            <span id="email-error"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Requirement</label>
+                            <textarea rows="5" placeholder="State your requirement here..." name="message" id="contact-message" onkeyup="validateMessage()" "></textarea>
+                            <span id="message-error"></span>
+                        </div>
+                        <div>
+                            <p class="success"><?php echo $success; ?></p>
+                            <p class="failed"><?php echo $failed; ?></p>
+                        </div>
+
+                        <button name="submit" onclick="return validateForm()" >Submit</button>
+                        <span id="submit-error"></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <a href="/" id="footer__logo"><img src="images/logo.png" class="footer__logo--img">JASWIK VENTURES</a>
+                <P class="contact__details"> +91 93246 16930</p>
+                <p class="contact__details">sales@jaswikventures.in</p>
+            </div>
+
+            <div class="social__media">
+                <div class="social__icons">
+                    <a href=" " class="social__icon--links " target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href=" " class="social__icon--links " target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href=" " class="social__icon--links " target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href=" " class="social__icon--links " target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <p class="website__rights">Copyright © 2022 JASWIK VENTURES. All rights reserved </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="menu.js"></script>
+    <script type="text/javascript" src="form.js"></script>
+    <script src="https://kit.fontawesome.com/9909cedc76.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+
+   
+</body>
+</html>
