@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1300.0002mm"
+   height="300mm"
+   viewBox="0 0 1300.0002 300"
+   version="1.1"
+   id="svg8558"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview8560"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs8555">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient9515">
+      <stop
+         style="stop-color:#ec6456;stop-opacity:1;"
+         offset="0.31235433"
+         id="stop9511" />
+      <stop
+         style="stop-color:#ec0056;stop-opacity:1;"
+         offset="1"
+         id="stop9513" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9515"
+       id="linearGradient9517"
+       x1="1300"
+       y1="300"
+       x2="112.45393"
+       y2="-145.91313"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9515"
+       id="linearGradient10734"
+       gradientUnits="userSpaceOnUse"
+       x1="1300"
+       y1="300"
+       x2="112.45393"
+       y2="-145.91313"
+       gradientTransform="translate(-476.86529,-60.979146)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:url(#linearGradient9517);fill-opacity:1;fill-rule:evenodd;stroke-width:0.765;stroke-linecap:round;paint-order:stroke fill markers"
+       id="rect8731"
+       width="1300"
+       height="300"
+       x="0"
+       y="0"
+       inkscape:export-filename="hero_bg_big.svg"
+       inkscape:export-xdpi="25.399996"
+       inkscape:export-ydpi="25.399996" />
+    <path
+       id="path9482"
+       style="fill:#ec4c56;fill-opacity:1;fill-rule:evenodd;stroke-width:0.765;stroke-linecap:round;paint-order:stroke fill markers"
+       d="M 875.73572,1.105e-4 628.2485,247.48733 680.76106,299.99989 H 1000.0005 L 1300.0002,1.105e-4 Z" />
+    <path
+       id="rect10732"
+       style="fill:url(#linearGradient10734);fill-opacity:1;fill-rule:evenodd;stroke-width:0.765;stroke-linecap:round;paint-order:stroke fill markers"
+       d="m 0,0 -37.110399,-60.979168 -439.754901,1.59e-4 -3e-5,299.999969 84.11042,-1.2e-4 z"
+       transform="rotate(-148.67635)" />
+  </g>
+</svg>
